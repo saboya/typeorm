@@ -80,6 +80,12 @@ export class PlatformTools {
                     return require("redis");
 
                 /**
+                 * better-sqlite
+                 */
+                case "better-sqlite3":
+                    return require("better-sqlite3");
+
+                /**
                 * sqlite
                 */
                 case "sqlite3":

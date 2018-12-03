@@ -8,7 +8,7 @@ export interface SqliteConnectionOptions extends BaseConnectionOptions {
     /**
      * Database type.
      */
-    readonly type: "sqlite";
+    readonly type: "sqlite" | "better-sqlite";
 
     /**
      * Storage type or path to the storage.

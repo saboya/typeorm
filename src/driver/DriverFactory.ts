@@ -2,6 +2,7 @@ import {MissingDriverError} from "../error/MissingDriverError";
 import {MongoDriver} from "./mongodb/MongoDriver";
 import {SqlServerDriver} from "./sqlserver/SqlServerDriver";
 import {OracleDriver} from "./oracle/OracleDriver";
+import {BetterSqliteDriver} from "./sqlite/BetterSqliteDriver";
 import {SqliteDriver} from "./sqlite/SqliteDriver";
 import {CordovaDriver} from "./cordova/CordovaDriver";
 import {ReactNativeDriver} from "./react-native/ReactNativeDriver";
@@ -32,6 +33,8 @@ export class DriverFactory {
                 return new MysqlDriver(connection);
             case "sqlite":
                 return new SqliteDriver(connection);
+            case "better-sqlite":
+                return new BetterSqliteDriver(connection);
             case "cordova":
                 return new CordovaDriver(connection);
             case "nativescript":

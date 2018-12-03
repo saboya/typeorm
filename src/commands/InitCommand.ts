@@ -520,6 +520,9 @@ Steps to run this project:
             case "postgres":
                 packageJson.dependencies["pg"] = "^7.3.0";
                 break;
+            case "better-sqlite":
+                packageJson.dependencies["better-sqlite3"] = "^5.0.0";
+                break;
             case "sqlite":
                 packageJson.dependencies["sqlite3"] = "^3.1.10";
                 break;

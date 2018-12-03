@@ -6,6 +6,7 @@ export type DatabaseType =
     "postgres"|
     "mariadb"|
     "sqlite"|
+    "better-sqlite"|
     "cordova"|
     "react-native"|
     "nativescript" |
